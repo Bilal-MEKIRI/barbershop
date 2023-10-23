@@ -1,0 +1,345 @@
+@font-face {
+    font-family: "Roboto Slab";
+    src: url("../../fonts/RobotoSlab/RobotoSlab-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(../../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+.header{
+    width: 100vw;
+    height: 100vh;
+    max-width: 1800px;
+    margin: 0 auto;
+
+    .header-navigation{
+        background-color: #303030;
+
+        .header-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1300px;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 10px;
+
+
+            .burger-menu-icon{
+                width: 40px;
+                height: 40px;
+                display: none;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            
+            .logo{
+                height: 100px;
+                width: 100px;
+            }
+            .nav-bar{
+                width: 65%;
+                padding: 10px;
+                
+                .nav-list{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    .list-item{
+                    text-decoration: none;
+                    transition: all ease-in 0.2s;
+                    &:hover{
+                        transform: scale(1.06);
+                    }
+                    
+                    .link{
+                        text-decoration: none;
+                        color: rgb(255, 255, 255);
+                        background: linear-gradient(90deg, #FFA500, #FFD700);
+                        background-clip: text;
+                        -webkit-background-clip: text; /* for better browser compatibility */
+                        font-family: "Roboto Slab";
+                        transition: all ease-in 0.2s;
+                        &:hover{
+                            cursor: pointer;
+                            color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+
+        
+    }
+}
+
+    .hero-section{
+
+        position: relative;
+        width: 100vw ;
+        max-width: 1800px;
+        height: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        
+        .hero-content-container{
+            max-width: 1300px;
+            width: 1300px;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            
+            .buisness-title{
+                margin-top: 100px;
+                font-family: 'Roboto Slab';
+                font-size: 4rem;
+                font-weight: bold;
+                color: white;
+                margin-bottom: 20px;
+                width: 50%;
+            }
+            
+            .buisness-description{
+                font-family: 'Roboto';
+                font-size: 1.6rem;
+                font-weight: normal;
+                color: white;
+                margin-bottom: 60px;
+                line-height: 1.5;
+                width: 50%;
+            }
+        }
+        
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("../../assets/images/hero_background.jpg");
+            background-size: 100vw 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.85;  // This reduces the opacity of the background image
+            z-index: -1;   // Ensure it stays behind the content of .hero-section
+        }
+    }
+    
+
+
+    @media(max-width: 1300px) {
+        .header-navigation{
+            padding: 0 50px;
+        }
+
+        .hero-content-container{
+            padding: 0 50px;
+        }
+
+    }
+
+    @media(max-width: 1040px) {
+        .header-navigation{
+            padding: 0 30px;
+        }
+        .hero-content-container{
+            padding: 0 30px;
+            .buisness-title{
+                width: 60% !important;
+            }
+        }
+    }
+
+    @media(max-width: 889px) {
+        .hero-content-container{
+            padding-bottom: 50px;
+        }
+    }
+
+    @media(max-width: 800px) {
+        .header-navigation{
+            padding: 0 15px;
+
+            .header-container{
+                .nav-bar{
+                    display: none;
+                }
+                
+                .burger-menu-icon{
+                    display: block;
+                }
+            }
+        }
+
+        .hero-content-container{
+            .buisness-title{
+                width: 80% !important;
+            }
+
+            .buisness-description{
+                width: 75% !important;
+            }
+        }
+    }
+
+    @media(max-width: 599px) {
+        .hero-content-container{
+            padding: 0 20px;
+        .buisness-title{
+            width: 95% !important;
+            font-size: 3rem !important;
+        }
+
+        .buisness-description{
+            width: 90% !important;
+            font-size: 1.3rem !important;
+            line-height: 1.3 !important;
+        }
+    }
+    }
+
+    @media(max-width: 369px) {
+        .hero-content-container{
+            padding: 0 10px;
+        .buisness-title{
+            width: 95% !important;
+            font-size: 2.6rem !important;
+        }
+
+        .buisness-description{
+            width: 90% !important;
+            font-size: 1.2rem !important;
+            line-height: 1.3 !important;
+            margin-bottom: 10px;
+        }
+    }
+    }
+}
+
+
+.footer{
+    width: 100vw;
+    height: fit-content;
+    max-width: 1800px;
+    margin: 0 auto;
+    background-color: #303030;
+
+   
+    .footer-content-container{
+        padding:  50px;
+        max-width: 1300px;
+        height: 200px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        .logo{
+            height: 70%;
+            padding-right: 20px;
+            border-right: 3px solid #707070a7;
+        }
+    
+        .info{
+            width: 85%;
+            height:100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding-left: 30px;
+
+    
+            .navigation{
+                padding-top: 50px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+    
+                .nav-elements{
+                    text-decoration: none;
+                    transition: all ease-in 0.2s;
+                    &:hover{
+                        transform: scale(1.06);
+                    }
+                    
+                    .nav-link{
+                        text-decoration: none;
+                        font-family: 'Roboto';
+                        font-size: 1.1rem;
+                        color: rgb(255, 255, 255);
+                        background: linear-gradient(90deg, #FFA500, #FFD700);
+                        background-clip: text;
+                        -webkit-background-clip: text; /* for better browser compatibility */
+                        transition: all ease-in 0.2s;
+                        &:hover{
+                            cursor: pointer;
+                            color: transparent;
+                        }
+                    }
+                }
+            }
+    
+            .copyrights{
+                font-family: 'Roboto Slab';
+                    font-size: 1.3rem;
+                    color: white;
+            }
+        }
+
+        
+    }
+
+    @media(max-width: 800px) {
+
+            .footer-content-container{
+                flex-direction: column !important;
+                align-items: center !important;
+                padding: 100px 30px 100px 30px !important;
+                height: fit-content;
+
+                .logo{
+                    height: 150px;
+                    width: 150px;
+                    border-right: none;
+                    padding: 0;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+    
+                .info{
+                    width: 100% !important;
+                    padding-left: 0;
+                    
+                    .navigation{
+                        width: 100% !important;
+                        flex-wrap: wrap !important;
+                        padding-top: 50px;
+                        padding-bottom: 50px;
+
+                        .nav-elements{
+                            margin: 30px !important;
+                            
+                            // .nav-link{
+                            //     text-decoration: none;
+                            //     font-family: 'Roboto';
+                            //     font-size: 1.1rem;
+                            // }
+                        }
+                    }
+                }
+            }
+        
+    }
+} 
