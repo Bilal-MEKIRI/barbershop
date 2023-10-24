@@ -4,7 +4,7 @@ import './home.scss';
 export default function Home() {
   return (
     <>
-      <section className="about">
+      <section className="about" id="about-section">
         <div className="about-content-container">
           <h1 className="section-title">About Us</h1>
           <div className="content">
@@ -13,12 +13,12 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="services">
+      <section className="services" id="services-section">
         <div className="services-content-container">
           <h1 className="section-title">Our Services</h1>
           <div className="services-cards-container">
             <ServicesCard title="Classic Hair Cut - 25$" descrption="Our signature haircut includes a precision trimand styling to suit your individual preferences." duration="Approx. 30 minutes" imgUrl="src/assets/images/classic_hair_cut.jpg" />
-          
+
             <ServicesCard title="Skin Fade - $35" descrption="Get a trendy skin fade haircut for a modern and stylish appearance." duration="Approx. 30 minutes" imgUrl="assets/images/skin_fade_cut.jpg" />
 
             <ServicesCard title="Beard Trim - $15" descrption="Keep your beard looking sharp with a professional trim and sculpting." duration="Approx. 15 minutes" imgUrl="assets/images/beard_trim.jpg" />

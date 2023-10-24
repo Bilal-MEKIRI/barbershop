@@ -23,16 +23,19 @@
 
         .service-title{
             font-family: 'Roboto Slab';
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: bold;
-            color: #030303;
+            // color: #030303;
+            color: #030303bd;
+
             width: 90%;
         }
 
         .service-description{
             font-family: 'Roboto';
             font-size: 1.2rem;
-            color: #030303;
+            // color: #030303;
+            color: #030303d1;
             margin-top: 20px;
             line-height: 1.4;
             width: 90%;
@@ -40,7 +43,8 @@
         .service-duration{
             font-family: 'Roboto';
             font-size: 1.2rem;
-            color: #030303;
+            // color: #030303;
+            color: #030303d1;
             margin-top: 15px;
             width: 80%;
         }
@@ -49,5 +53,72 @@
     .service-photo{
         width: 100%;
         height: 55%;
+    }
+}
+
+@media(max-width: 1078px) {
+    .card{
+        margin-right: 20px;
+    }
+}
+
+@media(max-width: 1059px) {
+    .card{
+      width: 280px;
+      height: 430px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .card{
+      margin-right: 0px;
+    }
+}
+
+@media(max-width: 969px) {
+    .card{
+        width: 260px;
+        height: 410px;
+        margin-right: 5px;
+        
+        .info{
+            .service-title{
+                font-size: 1.3rem;
+            }
+            .service-description{
+                font-size: 1rem;
+            }
+            .service-duration{
+                font-size: 0.95rem;
+            }
+        }
+    }
+}
+
+@media(max-width: 593px) {
+    .card{
+      width: 240px;
+      height: 390px;
+      margin-right: 5px;
+    }
+}
+
+@media(max-width: 556px) {
+    .card{
+      width: 370px;
+      height: 520px;
+      margin-right: 0;
+
+      .info{
+        .service-title{
+            font-size: 1.5rem;
+        }
+        .service-description{
+            font-size: 1.3rem;
+        }
+        .service-duration{
+            font-size: 1.2srem;
+        }
+    }
     }
 }
