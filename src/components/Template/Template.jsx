@@ -6,7 +6,7 @@ import CallToActionBtn from '../CallToActionBtn/CallToActionBtn';
 export default function Template() {
   return (
     <>
-      <header className="header">
+      <header className="header" id="header-section">
         <div className="hero-section">
           <div className="hero-content-container">
             <h1 className="buisness-title">Your Corner, Your Barber: Corner Barber</h1>
@@ -18,16 +18,16 @@ export default function Template() {
       <Outlet />
       <footer className="footer">
         <section className="footer-content-container">
-          <img src="assets/icons/logo-white-on-transparent-background.png" alt="Website logo" className="logo" />
+          <a href="#header-section" className="logo-link"> <img src="assets/icons/logo-white-on-transparent-background.png" alt="Website logo" className="logo"/></a>
           <div className="info">
             <ul className="navigation">
               <li className="nav-elements"><a href="#about-section" className="nav-link">About Us</a></li>
               <li className="nav-elements"><a href="#services-section" className="nav-link">Services</a></li>
-              <li className="nav-elements"><a to="#reviews-section" className="nav-link">Reviews</a></li>
-              <li className="nav-elements"><a to="#staff-section" className="nav-link">Staff</a></li>
-              <li className="nav-elements"><a to="#location-section" className="nav-link">Location</a></li>
-              <li className="nav-elements"><a to="#gallery-section" className="nav-link">Gallery</a></li>
-              <li className="nav-elements"><a to="#contact-section" className="nav-link">Contact</a></li>
+              <li className="nav-elements"><a href="#reviews-section" className="nav-link">Reviews</a></li>
+              <li className="nav-elements"><a href="#staff-section" className="nav-link">Staff</a></li>
+              <li className="nav-elements"><a href="#location-section" className="nav-link">Location</a></li>
+              <li className="nav-elements"><a href="#gallery-section" className="nav-link">Gallery</a></li>
+              <li className="nav-elements"><a href="#contact-section" className="nav-link">Contact</a></li>
             </ul>
             <p className="copyrights">© Corner Barber 2023</p>
           </div>

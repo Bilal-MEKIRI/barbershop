@@ -36,7 +36,7 @@
             justify-content: flex-start;
             
             .buisness-title{
-                margin-top: 100px;
+                margin-top: 120px;
                 font-family: 'Roboto Slab';
                 font-size: 4rem;
                 font-weight: bold;
@@ -159,19 +159,22 @@
     .footer-content-container{
         padding:  50px;
         max-width: 1300px;
-        height: 200px;
+        height: 130px;
         margin-right: auto;
         margin-left: auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
 
-
-        .logo{
+        .logo-link{
             height: 70%;
+            .logo{
+            height: 100%;
             padding-right: 20px;
             border-right: 3px solid #707070a7;
         }
+        }
+        
     
         .info{
             width: 85%;
@@ -184,7 +187,7 @@
 
     
             .navigation{
-                padding-top: 50px;
+                padding-top: 20px;
                 width: 100%;
                 display: flex;
                 align-items: center;
