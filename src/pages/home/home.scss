@@ -1,22 +1,29 @@
+html {
+    scroll-behavior: smooth;
+  }
 .about{
     width: 100vw;
     max-width: 1800px;
     height: fit-content;
-    background-color: #FFF9DB;
+    // background-color: #FFF9DB;
+    background-color: #fff9dbaf;
+
 
     .about-content-container{
         max-width: 1300px;
         height: fit-content;
         margin-right: auto;
         margin-left: auto;
-        padding-top: 100px;
+        padding-top: 180px;
         padding-bottom: 100px;
 
         .section-title{
             font-family: 'Roboto Slab';
-            font-size: 4rem;
+            font-size: 3rem;
             font-weight: bold;
-            color: #030303;
+            // color: #030303;
+            // color: #030303d1;
+            color: #030303bd;
             margin-bottom: 60px;
         }
 
@@ -30,8 +37,10 @@
                 width: 40%;
                 font-family: 'Roboto';
                 font-size: 1.5rem;
-                line-height: 1.8;
-                color: #030303;
+                line-height: 1.7;
+                // color: #030303;
+                color: #030303d1;
+
             }
 
             .about-img{
@@ -99,22 +108,25 @@
     width: 100vw;
     max-width: 1800px;
     height: fit-content;
-    background-color: #FFF8F3;
+    // background-color: #FFF8F3;
+    background-color: #fff8f3df;
+
 
     .services-content-container{
         max-width: 1300px;
         height: fit-content;
         margin-right: auto;
         margin-left: auto;
-        padding-top: 100px;
+        padding-top: 180px;
         padding-bottom: 100px;
 
         .section-title{
             font-family: 'Roboto Slab';
-            font-size: 4rem;
+            font-size: 3rem;
             font-weight: bold;
-            color: #030303;
-            margin-bottom: 60px;
+            // color: #030303;
+            color: #030303bd;
+            margin-bottom: 40px;
         }
 
         .services-cards-container{
@@ -123,6 +135,20 @@
             flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
+        }
+    }
+
+    @media(max-width: 1300px) {
+        .services-content-container{
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+    }
+
+    @media(max-width: 1040px) {
+        .services-content-container{
+            padding-right: 30px;
+            padding-left: 30px;
         }
     }
 }

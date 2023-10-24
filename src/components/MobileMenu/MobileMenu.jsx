@@ -5,6 +5,8 @@ export default function MobileMenu({isBurgerMenuActive, burgerMenuState}) {
   return (
     <div className={`mobile-nav-container ${isBurgerMenuActive ? 'active' : ''}`}>
       <div className="burger-menu-container">
+        <img src="/assets/icons/logo-white-on-transparent-background.png" className="logo" alt="Website logo" />
+        <p className="phone-number">+1 (555) 123-4567</p>
         <img src="src/assets/icons/icons8-close-50.png" className="burger-menu-icon" alt="Burger enu icon" onClick={() => {burgerMenuState()}} />
       </div>
       <ul className="mobile-nav">
