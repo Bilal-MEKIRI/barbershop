@@ -1,4 +1,7 @@
+import { Link } from 'react-router-dom';
 import ServicesCard from '../../components/ServicesCard/ServicesCard';
+import StaffMembers from '../../components/StaffMembers/StaffMembers';
+import ClientReviews from '../../components/ClientReviews/ClientReviews';
 import './home.scss';
 
 export default function Home() {
@@ -26,8 +29,34 @@ export default function Home() {
             <ServicesCard title="Hot Towel Shave - $30" descrption="Experience the ultimate in relaxation and grooming with a classic hot towel shave." duration="Approx. 30 minutes" imgUrl="assets/images/hot_towel_shave.jpg" />
 
           </div>
+          <div className="gallery-link">
+            <Link to={Home} className="link">See our work &gt;&gt;</Link>
+          </div>
         </div>
       </section>
+
+      <section className="staff" id="staff-section">
+        <div className="staff-content-container">
+          <h1 className="section-title">Our Staff</h1>
+          <div className="staff-cards-container">
+            <StaffMembers img="assets/images/barber_1.jpg" name="Ethan Martinez" />
+            <StaffMembers img="assets/images/barber_2_version_2.jpg" name="Samuel Thompson" />
+            <StaffMembers img="assets/images/barber_3_version_2.jpg" name="Benjamin Patel" />
+          </div>
+        </div>
+      </section>
+
+      <section className="reviews" id="reviews-section">
+        <div className="reviews-content-container">
+          <h1 className="section-title">Our Clients Reviews</h1>
+          <div className="reviews-cards-container">
+            <ClientReviews review="Corner Barber is the spot for guys like me. Great cuts, great service. Highly recommended." client="James S."/>
+            <ClientReviews review="These barbers know their stuff. Always leave with a fresh haircut and a smile. Top-notch!" client="Mark B." />
+            <ClientReviews review="The atmosphere here is unmatched. Every visit feels like catching up with old friends while getting a stellar trim. Can't imagine going anywhere else." client="Daniel L." />
+          </div>
+        </div>
+      </section>
+
     </>
   );
 }

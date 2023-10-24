@@ -32,8 +32,8 @@
             }
             
             .logo{
-                height: 100px;
-                width: 100px;
+                height: 80px;
+                width: 80px;
             }
             .nav-bar{
                 width: 65%;
@@ -70,7 +70,10 @@
         .phone-number{
             font-family: 'Roboto Slab';
             font-size: 1.1rem;
-            color: white;
+            color: transparent;
+            background: linear-gradient(90deg, #FFA500, #FFD700);
+            background-clip: text;
+            -webkit-background-clip: text; /* for better browser compatibility */
         }
     }
 }
