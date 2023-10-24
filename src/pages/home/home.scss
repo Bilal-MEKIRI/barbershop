@@ -115,14 +115,45 @@ html {
 .reviews{
   background-color: #EAE9E8 !important;
 }
-.services, .staff, .reviews {
+.location{
+
+  .address-container{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-bottom: 25px;
+
+    .location-icon{
+      height: 30px;
+      width: 30px;
+    }
+
+    .address{
+      font-family: 'Roboto';
+      font-size: 1.1rem;
+      color: #030303d1;
+      margin-left: 10px;
+    }
+  }
+
+  .location-cards-container{
+
+    .map{
+      width: 100vw;
+      height: 300px;
+    }
+  }
+}
+.services, .staff, .reviews, .location {
   width: 100vw;
   max-width: 1800px;
   height: fit-content;
   // background-color: #FFF8F3;
   background-color: #fff8f3df;
 
-  .services-content-container, .staff-content-container, .reviews-content-container {
+  .services-content-container, .staff-content-container, .reviews-content-container, .location-content-container {
     max-width: 1300px;
     height: fit-content;
     margin-right: auto;
@@ -139,7 +170,7 @@ html {
       margin-bottom: 40px;
     }
 
-    .services-cards-container, .staff-cards-container, .reviews-cards-container {
+    .services-cards-container, .staff-cards-container, .reviews-cards-container, .location-cards-container {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
@@ -169,14 +200,14 @@ html {
   }
 
   @media (max-width: 1300px) {
-    .services-content-container, .staff-content-container, .reviews-content-container {
+    .services-content-container, .staff-content-container, .reviews-content-container, .location-content-container {
       padding-right: 50px;
       padding-left: 50px;
     }
   }
 
   @media (max-width: 1040px) {
-    .services-content-container, .staff-content-container, .reviews-content-container {
+    .services-content-container, .staff-content-container, .reviews-content-container, .location-content-container {
       padding-right: 30px;
       padding-left: 30px;
     }
