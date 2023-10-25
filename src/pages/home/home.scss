@@ -146,14 +146,75 @@ html {
     }
   }
 }
-.services, .staff, .reviews, .location {
+.contact{
+
+  .contact-content-container{
+
+    .contact-info{
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      .details{
+        width: 40%;
+        height: fit-content;
+        .contact-modes{
+          font-family: 'Roboto';
+          font-size: 1.3rem;
+          color: #030303d1;
+          line-height: 1.4;
+        }
+
+        .phone-number-container{
+          margin-top: 20px;
+          width: fit-content;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .phone-icon{
+            height: 30px;
+            width: 30px;
+            margin-right: 10px;
+          }
+          .phone-number{
+            font-family: 'Roboto Slab';
+            font-size: 1.1rem;
+            color: #030303d1;
+          }
+        }
+      }
+    }
+  }
+
+  @media(max-width: 1224px) {
+    .details{
+      width: 50% !important;
+    }
+  }
+
+  @media(max-width: 681px) {
+    .contact-info{
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      .details{
+        width: 100% !important;
+        margin-bottom: 20px;
+      }
+  }
+}
+}
+.services, .staff, .reviews, .location, .contact {
   width: 100vw;
   max-width: 1800px;
   height: fit-content;
   // background-color: #FFF8F3;
   background-color: #fff8f3df;
 
-  .services-content-container, .staff-content-container, .reviews-content-container, .location-content-container {
+  .services-content-container, .staff-content-container, .reviews-content-container, .location-content-container, .contact-content-container {
     max-width: 1300px;
     height: fit-content;
     margin-right: auto;
@@ -170,7 +231,7 @@ html {
       margin-bottom: 40px;
     }
 
-    .services-cards-container, .staff-cards-container, .reviews-cards-container, .location-cards-container {
+    .services-cards-container, .staff-cards-container, .reviews-cards-container, .location-cards-container, .contact-cards-container {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
@@ -199,15 +260,18 @@ html {
     }
   }
 
+
+
+
   @media (max-width: 1300px) {
-    .services-content-container, .staff-content-container, .reviews-content-container, .location-content-container {
+    .services-content-container, .staff-content-container, .reviews-content-container, .location-content-container, .contact-content-container {
       padding-right: 50px;
       padding-left: 50px;
     }
   }
 
   @media (max-width: 1040px) {
-    .services-content-container, .staff-content-container, .reviews-content-container, .location-content-container {
+    .services-content-container, .staff-content-container, .reviews-content-container, .location-content-container, .contact-content-container {
       padding-right: 30px;
       padding-left: 30px;
     }

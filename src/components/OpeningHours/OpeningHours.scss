@@ -1,0 +1,28 @@
+.container{
+    width: 270px;
+    height: 300px;
+    padding: 20px;
+    background-color: #fff9dbe0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .schedule{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .day{
+            font-weight: bolder;
+        }
+
+        .day, .hours{
+            font-family: 'Roboto';
+            font-size: 1rem;
+            color: #030303d1;
+        }
+    }
+}
