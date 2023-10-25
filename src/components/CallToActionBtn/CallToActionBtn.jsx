@@ -3,6 +3,6 @@ import './CallToActionBtn.scss'
 
 export default function CallToActionBtn({ linkTo, content }) {
   return (
-    <Link to={linkTo} className="call-to-action-btn"><p className="content">{content}</p></Link>
+    <a href={linkTo} className="call-to-action-btn"><p className="content">{content}</p></a>
   );
 }

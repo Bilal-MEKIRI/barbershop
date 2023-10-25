@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import ServicesCard from '../../components/ServicesCard/ServicesCard';
 import StaffMembers from '../../components/StaffMembers/StaffMembers';
 import ClientReviews from '../../components/ClientReviews/ClientReviews';
+import OpeningHours from '../../components/OpeningHours/OpeningHours';
 import './home.scss';
 
 export default function Home() {
@@ -66,6 +67,25 @@ export default function Home() {
           </div>
           <div className="location-cards-container">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.83988761643!2d-0.2664059157476487!3d51.52873980477459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sfr!4v1698172211093!5m2!1sen!2sfr" className="map" style={{border: 0 }} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="googlemap" />
+          </div>
+        </div>
+      </section>
+
+      <section className="contact" id="contact-section">
+        <div className="contact-content-container">
+          <h1 className="section-title">Contact us</h1>
+          <div className="contact-info">
+            <div className="details">
+              <p className="contact-modes">The easiest way to book an appointment is by calling us directly, or fill the form below and we'll call you back.</p>
+              <div className="phone-number-container">
+                <img src='assets/icons/phone_icon_30.png' alt="location icon" className="phone-icon"></img>
+                <p className="phone-number">+1 (555) 123-4567</p>
+              </div>
+            </div>
+            <OpeningHours />
+          </div>
+          <div className="contact-cards-container">
+
           </div>
         </div>
       </section>
