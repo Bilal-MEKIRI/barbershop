@@ -20,6 +20,8 @@ export default function StickyNavBar() {
     return () => { window.removeEventListener('resize', screenSize); };
   }, []);
 
+  console.log('Is the burger menu active: ', isBurgerMenuActive);
+
   return (
     <div className="sticky-nav-bar">
       <div className="header-navigation">
@@ -35,7 +37,7 @@ export default function StickyNavBar() {
             </ul>
           </nav>
           <img src="src/assets/icons/icons8-menu-50.png" className="burger-menu-icon" alt="Burger enu icon" onClick={() => {burgerMenuState()}} />
-          {isBurgerMenuActive ? <MobileMenu isBurgerMenuActive burgerMenuState={burgerMenuState} /> : ''}
+          {isBurgerMenuActive ? <MobileMenu setIsBurgerMenuActive={setIsBurgerMenuActive} isBurgerMenuActive burgerMenuState={burgerMenuState} /> : ''}
           <p className="phone-number">+1 (555) 123-4567</p>
         </div>
       </div>

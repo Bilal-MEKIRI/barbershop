@@ -3,6 +3,7 @@ import ServicesCard from '../../components/ServicesCard/ServicesCard';
 import StaffMembers from '../../components/StaffMembers/StaffMembers';
 import ClientReviews from '../../components/ClientReviews/ClientReviews';
 import OpeningHours from '../../components/OpeningHours/OpeningHours';
+import ContactForm from '../../components/ContactForm/ContactForm';
 import './home.scss';
 
 export default function Home() {
@@ -84,9 +85,7 @@ export default function Home() {
             </div>
             <OpeningHours />
           </div>
-          <div className="contact-cards-container">
-
-          </div>
+          <ContactForm />
         </div>
       </section>
 
