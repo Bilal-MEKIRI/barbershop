@@ -10,7 +10,7 @@ export default function MobileMenu({setIsBurgerMenuActive, isBurgerMenuActive, b
       <div className="burger-menu-container">
         <img src="/assets/icons/logo-white-on-transparent-background.png" className="logo" alt="Website logo" />
         <p className="phone-number">+1 (555) 123-4567</p>
-        <img src="src/assets/icons/icons8-close-50.png" className="burger-menu-icon" alt="Burger enu icon" onClick={() => {burgerMenuState()}} />
+        <img src="/assets/icons/icons8-close-50.png" className="burger-menu-icon" alt="Burger enu icon" onClick={() => {burgerMenuState()}} />
       </div>
       <ul className="mobile-nav">
         <li className="mobile-nav-element"><a href="#about-section" className="link" onClick={handleNavClick}>About Us</a></li>

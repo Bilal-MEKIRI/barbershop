@@ -23,16 +23,12 @@ export default function Home() {
           <h1 className="section-title">Our Services</h1>
           <div className="services-cards-container">
             <ServicesCard title="Classic Hair Cut - 25$" descrption="Our signature haircut includes a precision trimand styling to suit your individual preferences." duration="Approx. 30 minutes" imgUrl="src/assets/images/classic_hair_cut.jpg" />
-
             <ServicesCard title="Skin Fade - $35" descrption="Get a trendy skin fade haircut for a modern and stylish appearance." duration="Approx. 30 minutes" imgUrl="assets/images/skin_fade_cut.jpg" />
-
             <ServicesCard title="Beard Trim - $15" descrption="Keep your beard looking sharp with a professional trim and sculpting." duration="Approx. 15 minutes" imgUrl="assets/images/beard_trim.jpg" />
-
             <ServicesCard title="Hot Towel Shave - $30" descrption="Experience the ultimate in relaxation and grooming with a classic hot towel shave." duration="Approx. 30 minutes" imgUrl="assets/images/hot_towel_shave.jpg" />
-
           </div>
           <div className="gallery-link">
-            <Link to={Home} className="link">See our work &gt;&gt;</Link>
+            <Link to="/gallery#gallery-page" className="link">See our work &gt;&gt;</Link>
           </div>
         </div>
       </section>
@@ -54,7 +50,7 @@ export default function Home() {
           <div className="reviews-cards-container">
             <ClientReviews review="Corner Barber is the spot for guys like me. Great cuts, great service. Highly recommended." client="James S."/>
             <ClientReviews review="These barbers know their stuff. Always leave with a fresh haircut and a smile. Top-notch!" client="Mark B." />
-            <ClientReviews review="The atmosphere here is unmatched. Every visit feels like catching up with old friends while getting a stellar trim. Can't imagine going anywhere else." client="Daniel L." />
+            <ClientReviews review="The atmosphere here is unmatched. Every visit feels like catching up with old friends while getting a stellar trim." client="Daniel L." />
           </div>
         </div>
       </section>

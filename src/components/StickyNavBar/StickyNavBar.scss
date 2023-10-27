@@ -112,4 +112,26 @@
     }
 }
 
+@media(max-width: 339px) {
+    .header-navigation{
+        padding: 0 15px;
+
+        .header-container{
+            .nav-bar{
+            display: none;
+        }
+
+        .burger-menu-icon{
+            display: block;
+            order: 2;
+            }
+
+            .phone-number{
+                order: 1;
+                display: none;
+            }
+        }
+    }
+}
+
 }

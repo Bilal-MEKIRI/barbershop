@@ -20,6 +20,8 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
+        margin-right: auto;
+        margin-left: auto;
 
         .service-title{
             font-family: 'Roboto Slab';
@@ -27,7 +29,6 @@
             font-weight: bold;
             // color: #030303;
             color: #030303bd;
-
             width: 90%;
         }
 
@@ -105,19 +106,99 @@
 
 @media(max-width: 556px) {
     .card{
-      width: 370px;
-      height: 520px;
+      width: 250px;
+      height: 430px;
       margin-right: 0;
 
       .info{
+            padding: 10px;
+            height: 35%;
+
         .service-title{
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
         .service-description{
-            font-size: 1.3rem;
+            font-size: 1rem;
+            margin-top: 5px;
         }
         .service-duration{
-            font-size: 1.2srem;
+            font-size: 0.9rem;
+            margin-top: 0;
+        }
+    }
+    }
+}
+
+@media(max-width: 547px) {
+    .card{
+      width: 240px;
+      height: 400px;
+      margin-right: 0;
+
+      .info{
+            padding: 8px;
+            height: 40%;
+
+        .service-title{
+            font-size: 1.2rem;
+        }
+        .service-description{
+            font-size: 1rem;
+            margin-top: 5px;
+        }
+        .service-duration{
+            font-size: 0.9rem;
+            margin-top: 0;
+        }
+    }
+    }
+}
+
+@media(max-width: 531px) {
+    .card{
+      width: 300px;
+      height: 400px;
+      margin-right: 0;
+
+      .info{
+            padding: 20px;
+            height: 40%;
+
+        .service-title{
+            font-size: 1.2rem;
+        }
+        .service-description{
+            font-size: 1rem;
+            margin-top: 5px;
+        }
+        .service-duration{
+            font-size: 0.9rem;
+            margin-top: 0;
+        }
+    }
+    }
+}
+
+@media(max-width: 350px) {
+    .card{
+      width: 100%;
+      height: 400px;
+      margin-right: 0;
+
+      .info{
+            padding: 20px;
+            height: 40%;
+
+        .service-title{
+            font-size: 1.2rem;
+        }
+        .service-description{
+            font-size: 1rem;
+            margin-top: 5px;
+        }
+        .service-duration{
+            font-size: 0.9rem;
+            margin-top: 0;
         }
     }
     }
