@@ -1,4 +1,4 @@
-import { Outlet, useLocation } from 'react-router-dom';
+import { Outlet, useLocation, Link } from 'react-router-dom';
 import './Template.scss';
 import '../../../utils/reset.scss';
 import CallToActionBtn from '../CallToActionBtn/CallToActionBtn';
@@ -30,7 +30,7 @@ export default function Template() {
               <li className="nav-elements"><a href="/#reviews-section" className="nav-link">Reviews</a></li>
               <li className="nav-elements"><a href="/#staff-section" className="nav-link">Staff</a></li>
               <li className="nav-elements"><a href="/#location-section" className="nav-link">Location</a></li>
-              <li className="nav-elements"><a href="/gallery" className="nav-link">Gallery</a></li>
+              <li className="nav-elements"><Link to="/gallery" className="nav-link">Gallery</Link></li>
               <li className="nav-elements"><a href="/#contact-section" className="nav-link">Contact</a></li>
             </ul>
             <p className="copyrights">© Corner Barber 2023</p>

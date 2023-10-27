@@ -22,7 +22,7 @@ export default function Home() {
         <div className="services-content-container">
           <h1 className="section-title">Our Services</h1>
           <div className="services-cards-container">
-            <ServicesCard title="Classic Hair Cut - 25$" descrption="Our signature haircut includes a precision trimand styling to suit your individual preferences." duration="Approx. 30 minutes" imgUrl="src/assets/images/classic_hair_cut.jpg" />
+            <ServicesCard title="Classic Hair Cut - 25$" descrption="Our signature haircut includes a precision trimand styling to suit your individual preferences." duration="Approx. 30 minutes" imgUrl="/assets/images/classic_hair_cut.jpg" />
             <ServicesCard title="Skin Fade - $35" descrption="Get a trendy skin fade haircut for a modern and stylish appearance." duration="Approx. 30 minutes" imgUrl="assets/images/skin_fade_cut.jpg" />
             <ServicesCard title="Beard Trim - $15" descrption="Keep your beard looking sharp with a professional trim and sculpting." duration="Approx. 15 minutes" imgUrl="assets/images/beard_trim.jpg" />
             <ServicesCard title="Hot Towel Shave - $30" descrption="Experience the ultimate in relaxation and grooming with a classic hot towel shave." duration="Approx. 30 minutes" imgUrl="assets/images/hot_towel_shave.jpg" />
@@ -38,8 +38,8 @@ export default function Home() {
           <h1 className="section-title">Our Staff</h1>
           <div className="staff-cards-container">
             <StaffMembers img="assets/images/barber_1.jpg" name="Ethan Martinez" />
-            <StaffMembers img="assets/images/barber_2_version_2.jpg" name="Samuel Thompson" />
-            <StaffMembers img="assets/images/barber_3_version_2.jpg" name="Benjamin Patel" />
+            <StaffMembers img="assets/images/barber_2.jpg" name="Samuel Thompson" />
+            <StaffMembers img="assets/images/barber_3.jpg" name="Benjamin Patel" />
           </div>
         </div>
       </section>
