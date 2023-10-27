@@ -1,0 +1,35 @@
+.gallery-container {
+    max-width: 1300px;
+    margin: 50px auto;
+    filter: drop-shadow(0px 2.8px 2.2px rgba(0, 0, 0, 0.02)) drop-shadow(0px 6.7px 5.3px rgba(0, 0, 0, 0.03)) drop-shadow(0px 12.5px 10px rgba(0, 0, 0, 0.04)) drop-shadow(0px 22.3px 17.9px rgba(0, 0, 0, 0.04)) drop-shadow(0px 41.8px 33.4px rgba(0, 0, 0, 0.05)) drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.07));
+    
+    column-count: 3; /* Adjust based on how many columns you want */
+    column-gap: 20px;
+}
+
+.gallery-img {
+    width: 100%; /* This will make the image take up the full width of the column */
+    break-inside: avoid; /* Prevents the image from breaking across columns */
+    padding-bottom: 20px; /* Spacing between images, can adjust as needed */
+    display: inline-block; /* This is to ensure that break-inside is respected */
+}
+
+@media(max-width: 1345px) {
+    .gallery-container {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+@media(max-width: 814px) {
+    .gallery-container {
+        column-count: 2; 
+    }
+}
+
+@media(max-width: 468px) {
+    .gallery-container {
+        column-count: 1; 
+    }
+}
+

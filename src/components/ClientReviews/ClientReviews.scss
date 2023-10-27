@@ -56,3 +56,99 @@
         opacity: 0.6;
     }
 }
+
+@media(max-width: 1156px) {
+    .review-container{
+        width: 280px;
+        height: 330px;
+    }
+}
+
+@media(max-width: 1092px) {
+    .review-container{
+        width: 260px;
+        height: 310px;
+    }
+}
+
+@media(max-width: 984px) {
+    .review-container{
+        width: 240px;
+        height: 310px;
+    
+        .client-name{
+            padding-top: 15px;
+        }
+    
+        .stars-container{
+            padding-top: 20px;
+    
+        }
+    }
+}
+
+@media(max-width: 916px) {
+    .review-container{
+        width: 220px;
+        height: 320px;
+    
+        .client-name{
+            padding-top: 15px;
+        }
+    
+        .stars-container{
+            padding-top: 20px;
+    
+        }
+    }
+}
+
+@media(max-width: 853px) {
+    .review-container{
+        width: 200px;
+        height: 310px;
+    
+        .client-name{
+            padding-top: 15px;
+        }
+    
+        .stars-container{
+            padding-top: 20px;
+    
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    //Maybe here I'll add a slider ReactSlick
+    .review-container{
+        width: 40%;
+        height: 310px;
+    
+        .client-name{
+            padding-top: 15px;
+        }
+    
+        .stars-container{
+            padding-top: 20px;
+    
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    //Maybe here I'll add a slider ReactSlick
+    .review-container{
+        width: 90%;
+        height: 310px;
+    
+        .client-name{
+            padding-top: 15px;
+        }
+    
+        .stars-container{
+            padding-top: 20px;
+            justify-content: flex-start;
+        }
+    }
+}
