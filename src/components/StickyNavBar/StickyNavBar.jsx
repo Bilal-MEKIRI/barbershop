@@ -38,7 +38,7 @@ export default function StickyNavBar() {
           </nav>
           <img src="/assets/icons/icons8-menu-50.png" className="burger-menu-icon" alt="Burger enu icon" onClick={() => {burgerMenuState()}} />
           {isBurgerMenuActive ? <MobileMenu setIsBurgerMenuActive={setIsBurgerMenuActive} isBurgerMenuActive burgerMenuState={burgerMenuState} /> : ''}
-          <p className="phone-number">+1 (555) 123-4567</p>
+          <a href="+15551234567" className="phone-number">+1 (555) 123-4567</a>
         </div>
       </div>
       <Outlet />

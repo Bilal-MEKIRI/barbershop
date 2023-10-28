@@ -241,6 +241,7 @@ html {
             margin-right: 10px;
           }
           .phone-number{
+            text-decoration: none;
             font-family: 'Roboto Slab';
             font-size: 1.1rem;
             line-height: 1.6;
@@ -345,13 +346,25 @@ html {
 
       .link{
         text-decoration: none;
-        font-family: 'Roboto Slab';
-        font-size: 1.2rem;
-        color: #030303d1;
         transition: all ease-in-out 0.3s;
+        display: flex;
+        align-items: center !important;
+        justify-content: space-around;
         &:hover{
           cursor: pointer;
           transform: scale(1.05);
+        }
+
+        .see-our-work-link{
+          font-family: 'Roboto Slab';
+          font-size: 1.2rem;
+          color: #030303d1;
+        }
+
+        .double-chevron-right-icon{
+          width: 20px;
+          height: 20px;
+          margin-left: 10px;
         }
       }
     }
