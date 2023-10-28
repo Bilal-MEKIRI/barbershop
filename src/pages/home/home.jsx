@@ -28,7 +28,7 @@ export default function Home() {
             <ServicesCard title="Hot Towel Shave - $30" descrption="Experience the ultimate in relaxation and grooming with a classic hot towel shave." duration="Approx. 30 minutes" imgUrl="assets/images/hot_towel_shave.jpg" />
           </div>
           <div className="gallery-link">
-            <Link to="/gallery#gallery-page" className="link">See our work &gt;&gt;</Link>
+            <Link to="/gallery#gallery-page" className="link"><p className="see-our-work-link">See our work</p><img src='/assets/icons/double_right_chevron.png' className="double-chevron-right-icon" alt="double chevron right icon" /></Link>
           </div>
         </div>
       </section>
@@ -75,8 +75,8 @@ export default function Home() {
             <div className="details">
               <p className="contact-modes">The easiest way to book an appointment is by calling us directly, or fill the form below and we'll call you back.</p>
               <div className="phone-number-container">
-                <img src='assets/icons/phone_icon_30.png' alt="location icon" className="phone-icon"></img>
-                <p className="phone-number">+1 (555) 123-4567</p>
+                <img src="assets/icons/phone_icon_30.png" alt="location icon" className="phone-icon" />
+                <a href="+15551234567" className="phone-number">+1 (555) 123-4567</a>
               </div>
             </div>
             <OpeningHours />
