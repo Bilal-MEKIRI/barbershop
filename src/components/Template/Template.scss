@@ -37,7 +37,6 @@
             flex-direction: column;
             align-items: flex-start;
             justify-content: flex-start;
-
             padding-bottom: 20px;
             
             .buisness-title{
@@ -68,7 +67,8 @@
     @media(max-width: 1300px) {
 
         .hero-content-container{
-            padding: 0 50px;
+            padding-left: 50px;
+            padding-right: 50px;
         }
         
     }
@@ -76,7 +76,8 @@
     @media(max-width: 1040px) {
 
         .hero-content-container{
-            padding: 0 30px;
+            padding-left: 30px;
+            padding-right: 30px;
             .buisness-title{
                 width: 60% !important;
             }
@@ -106,7 +107,8 @@
 
     @media(max-width: 599px) {
         .hero-content-container{
-            padding: 0 20px;
+            padding-left: 20px;
+            padding-right: 20px;
         .buisness-title{
             width: 95% !important;
             font-size: 3rem !important;
@@ -122,7 +124,8 @@
 
     @media(max-width: 369px) {
         .hero-content-container{
-            padding: 0 10px;
+            padding-left: 10px;
+            padding-right: 10px;
         .buisness-title{
             width: 95% !important;
             font-size: 2.6rem !important;
@@ -180,16 +183,10 @@
         background-repeat: no-repeat;
     
         .hero-section{
-            position: initial !important;
                 height: 100% !important;
     
             
             .hero-content-container{
-                position: relative;
-                top: -30px;
-                height: min-content !important;
-                margin-top: 0 !important;
-                padding-top: 0 !important;
                 justify-content: space-between;
                 
                 .buisness-title{
