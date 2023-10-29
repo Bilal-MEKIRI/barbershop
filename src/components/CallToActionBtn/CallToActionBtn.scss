@@ -46,9 +46,21 @@
         width: max-content;
     }
 }
+
+
 }    
 
 .submit-btn{
     border: none;
 }
 
+
+@media(max-width: 336px){
+    .call-to-action-btn{
+        padding: 16px 32px 16px 32px;
+    .content{
+        font-size: 0.8rem;
+        width: max-content;
+    }
+}
+}
