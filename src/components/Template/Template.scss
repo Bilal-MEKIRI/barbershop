@@ -142,25 +142,15 @@
 }
 
 @media(max-width: 813px) {
-
     
 .header{
-    height: 80vh;
     background-image: url("../../../assets/images/opacity-changed-mobile_hero_background.jpg");
-    background-size: 100vw 100%;
-    background-position: center;
-    background-repeat: no-repeat;
 
     .hero-section{
-        height: 100% !important;
 
-        
         .hero-content-container{
-            height: fit-content !important;
-            justify-content: space-between;
             
             .buisness-title{
-                margin-top: 0;
                 font-size: 3rem;
             }
             
@@ -176,21 +166,15 @@
 
     
     .header{
-        height: 70vh;
         background-image: url("../../../assets/images/opacity-changed-mobile_hero_background.jpg");
         background-size: 100vw 100%;
-        background-position: center;
-        background-repeat: no-repeat;
     
         .hero-section{
-                height: 100% !important;
     
             
             .hero-content-container{
-                justify-content: space-between;
                 
                 .buisness-title{
-                    margin-top: 50px;
                     font-size: 3rem;
                 }
                 
