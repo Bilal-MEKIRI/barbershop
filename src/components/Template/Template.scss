@@ -144,6 +144,7 @@
 @media(max-width: 813px) {
     
 .header{
+    height: 85vh;
     background-image: url("../../../assets/images/opacity-changed-mobile_hero_background.jpg");
 
     .hero-section{
@@ -166,6 +167,9 @@
 
     
     .header{
+    height: 70vh;
+
+    
         background-image: url("../../../assets/images/opacity-changed-mobile_hero_background.jpg");
         background-size: 100vw 100%;
     
